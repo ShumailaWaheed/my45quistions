@@ -1,7 +1,7 @@
 let usernames: string[] = [];
 
 // Check if the list of users is not empty
-if (usernames.length = 0) {
+if (usernames.length === 0) {
     console.log("We need to find some users!");
 } else {
     for (let username of usernames) {
