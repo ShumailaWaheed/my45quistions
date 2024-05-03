@@ -1,10 +1,7 @@
 // Array of guest names
-const guestlist: string[] = ['urooj', 'mehak', 'sidra', 'faryal'];
+let guest_list: string[] = ['urooj', 'mehak', 'sidra', 'faryal'];
 
 // Print invitation messages for each guest
-guest_list.forEach(guest => {
-    console.log(`Respected Sir/Madam ${guest},\nWe invite you to dinner tomorrow.\nThank you.\n`);
-});
+let numGuests: number = guest_list.length;
 
-// Print the number of people invited to dinner
-console.log(`Total number of people invited to dinner: ${guest_list.length}`);
+console.log(`i am inviting ${guest_list.length} people to dinner.`);
