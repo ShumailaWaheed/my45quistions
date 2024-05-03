@@ -1,10 +1,10 @@
-var guest_list = ['urooj', 'mehak', 'sidra', 'faryal'];
-for (var i = 0; i < guest_list.length; i++) {
-    console.log('Respacted Sir/Medum' + guest_list[i] + ',\nwe invite you on dinner tomorrow.\nThank You\n');
-}
-var not_present = 'urooj';
-var new_guest = 'kanwal';
-for (var i = 0; i < guest_list.length; i++) {
-    console.log('Respected Sir/Medum' + guest_list[i] + ',\nwe invite you on dinner tomorrow.\nTHANK You\n');
-}
-console.log("Mr. ".concat(not_present, " will not coming tomorrow dinner."));
+var guests = ["urooj", "Mehak", "Sidra", "Faryal"];
+var unableToAttend = "Sidra";
+console.log("".concat(unableToAttend, " can't make it to dinner."));
+// Replace the guest
+var newGuest = "Kanwal";
+guests[guests.indexOf(unableToAttend)] = newGuest;
+// New invitations
+guests.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+});
