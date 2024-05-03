@@ -1,7 +1,12 @@
-function show_magicians(magicians) {
-    magicians.forEach(function (magician) { return console.log(magician); });
-}
+"use strict";
 // Array of magician's names
-var magicianNames = ["Ali the Great", "Zara Magic", "Khan the Illusionist"];
-// Print the names of magicians
-show_magicians(magicianNames);
+const magicianNames = ["Ali the Great", "Zara Magic", "Khan the Illusionist"];
+// Function to display magician names
+function displayMagicians(magicians) {
+    console.log("Magicians:");
+    magicians.forEach(magician => {
+        console.log(magician);
+    });
+}
+// Call the function to display magician names
+displayMagicians(magicianNames);
