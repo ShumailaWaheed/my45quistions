@@ -1,9 +1,23 @@
-function show_magicians(magicians: string[]): void {
-    magicians.forEach(magician => console.log(magician));
+// Original list of magician names
+let magicians: string[] = 
+["Ali the Great", "Zara Magic", "Khan the Illusionist"];
+
+function makeGreat(magicians: string[]): string[] {
+    let greatMagicians: string[] = [];
+    magicians.forEach(magician => {
+        greatMagicians.push(`${magician} the Great`);
+    });
+    return greatMagicians;
 }
 
-// Array of magician's names
-const magicianNames: string[] = ["Ali the Great", "Zara Magic", "Khan the Illusionist"];
+function showMagicians(magicians: string[]) {
+    magicians.forEach(magician => {
+        console.log(magician);
+    });
+}
 
-// Print the names of magicians
-show_magicians(magicianNames);
+let greatMagicians: string[] = makeGreat([...magicians]); // Creates a new modified array
+console.log("Original magicians:");
+showMagicians(magicians); // Shows original names
+console.log("Great magicians:");
+showMagicians(greatMagicians); // Shows modified names
