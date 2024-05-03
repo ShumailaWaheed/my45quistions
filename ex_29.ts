@@ -1,21 +1,21 @@
-let favoriteFruits = ["Apple", "Banana", "Strawberry"];
+let favoriteFruits: string[] = ["Apple", "Banana", "Strawberry"];
 
-if (favoriteFruits.indexOf("Apple")) {
+if (favoriteFruits.includes("Apple")) {
     console.log("i would like to eat apples!");
 }
 
-if (favoriteFruits.indexOf("Banana")) {
+if (favoriteFruits.includes("Banana")) {
     console.log("i would like to eat bananas!");
 }
 
-if (favoriteFruits.indexOf("Strawberry")) {
+if (favoriteFruits.includes("Strawberry")) {
     console.log("i would like to eat strawberries!");
 }
 
-if (favoriteFruits.indexOf("Orange")) {
+if (favoriteFruits.includes("Orange")) {
     console.log("i would like to eat oranges!");
 }
 
-if (favoriteFruits.indexOf("Grapes")) {
-    console.log("i would like to grapes!");
+if (favoriteFruits.includes("Grapes")) {
+    console.log("i would like to eat grapes!");
 }
