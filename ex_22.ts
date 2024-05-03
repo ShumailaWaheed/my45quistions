@@ -1,6 +1,4 @@
-let arry: (string | number) [] = ['Nadeem','Aqib',3,5,8];
-console.log(arry[5]);
-console.log(arry[0]);
-console.log(arry[1]);
-console.log(arry[2]);
-console.log(arry[4]);
+let friends: string[] = ["Urooj", "Mehak", "Sidra"];
+// Arrays are zero-indexed, so index 3 is out of bounds
+console.log(friends[3]); 
+friends[2] = "Sidra"; 
