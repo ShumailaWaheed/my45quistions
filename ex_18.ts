@@ -1,28 +1,23 @@
-const places: string[] = ["cape town","Paris","New York","delhi","faislabad"];
-  
-  console.log("Original order:");
-  console.log(places);
-  
-  console.log("\nAlphabetical order:");
-  console.log(places.sort());
-  
-  console.log("\nOriginal order (still intact):");
-  console.log(places);
-  
-  console.log("\nReverse alphabetical order:");
-  console.log([places].sort().reverse());
-  
-  console.log("\nOriginal order (still intact):");
-  console.log(places);
-  
-  console.log("\nReversed order:");
-  console.log(places.reverse());
-  
-  console.log("\nReversed back to original order:");
-  console.log(places);
-  
-  console.log("\nSorted in alphabetical order:");
-  console.log(...places.sort());
-  
-  console.log("\nSorted in reverse alphabetical order:");
-  console.log(places.sort().reverse());
+let places: string[] = ["Australia", "Canada", "France", "Italy", "South Africa"];
+
+console.log("Original order:", places);
+
+console.log("Alphabetical order:", [...places].sort());
+
+console.log("Original order:", places);
+
+console.log("Reverse alphabetical order:", [...places].sort().reverse());
+
+console.log("Original order:", places);
+
+places.reverse();
+console.log("Reversed order:", places);
+
+places.reverse();
+console.log("Original order:", places);
+
+places.sort();
+console.log("Alphabetical order:", places);
+
+places.reverse();
+console.log("Reverse alphabetical order:", places);
