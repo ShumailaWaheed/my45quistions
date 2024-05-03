@@ -1,30 +1,7 @@
-interface Book {
-    title: string;
-    author: string;
-    genre: string;
-    year: number;
-  }
-  
-  const books: Book[] = [
-    {
-      title: "To Kill a Mockingbird",
-      author: "Harper Lee",
-      genre: "Fiction",
-      year: 1960
-    },
-    {
-      title: "1984",
-      author: "George Orwell",
-      genre: "Dystopian",
-      year: 1949
-    },
-    {
-      title: "Pride and Prejudice",
-      author: "Jane Austen",
-      genre: "Romance",
-      year: 1813
-    }
-  ];
-  
-  console.log("List of books:");
-  console.log(books);
+let book: { title: string; author: string; yearPublished: number } = {
+  title: "The Hobbit",
+  author: "C.S. Lewis",
+  yearPublished: 1937
+};
+console.log(`Book Info: ${book.title} by ${book.author}, 
+published in ${book.yearPublished}`);
