@@ -1,5 +1,6 @@
 // Array of friend names
-const names: string[] = ["Urooj", "Mehak", "Sidra", "Faryal"];
+let names: string[] = ["Urooj", "Mehak", "Sidra", "Faryal"];
 
-// Printing each name one at a time
-names.forEach(name => console.log(name));
+for (let name of names) {
+    console.log(`Hello ${name}, would you like to learn some TypeScript today?`);
+}

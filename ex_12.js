@@ -1,4 +1,6 @@
+"use strict";
 // Array of friend names
-var names = ["Urooj", "Mehak", "Sidra", "Faryal"];
-// Printing each name one at a time
-names.forEach(function (name) { return console.log(name); });
+let names = ["Urooj", "Mehak", "Sidra", "Faryal"];
+for (let name of names) {
+    console.log(`Hello ${name}, would you like to learn some TypeScript today?`);
+}
